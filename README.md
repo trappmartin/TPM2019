@@ -16,7 +16,7 @@ To run the experiments,
 
 5. Run the script using `julia experiment.jl` and wait for a while. Sorry for the slow code. :D
 
-***#### Dependencies
+#### Dependencies
 
 The following version for each package has been used.
 
