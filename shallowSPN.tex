@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+  
+\tikzstyle{vertex}=[inner sep=0.01cm, circle, draw]
+\resizebox{!}{0.8\textheight}{
+  \begin{tikzpicture} [
+  scale=1, 
+  auto, >={latex'[width=5cm]},
+  triangle/.style = {regular polygon, regular polygon sides=3, draw },
+]
+    \path[use as bounding box] (-4,0.5) rectangle (4,-3);
+    
+    \node[vertex](root) at (0, 0) {\large$+$};
+    
+    \node[triangle](j1) at (-3, -2.5) {$C_1$};
+    \node[triangle](j2) at (-1, -2.5) {$C_2$};
+    \node[triangle](j3) at (1, -2.5) {$C_3$};
+    \node[triangle](j4) at (3, -2.5) {$C_4$};
+    
+    \draw[->] (root) -- (j1.north) node[above, midway, sloped] {$w_1$};
+    \draw[->] (root) -- (j2.north) node[above, midway, sloped] {$w_2$};
+    \draw[->] (root) -- (j3.north) node[above, midway, sloped] {$w_3$};
+    \draw[->] (root) -- (j4.north) node[above, midway, sloped] {$w_4$};
+	
+ 	\end{tikzpicture}
+ 	}
+\end{document}

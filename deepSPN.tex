@@ -1,0 +1,37 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+  
+\tikzstyle{vertex}=[inner sep=0.01cm, circle, draw]
+\resizebox{!}{0.8\textheight}{
+  \begin{tikzpicture} [
+  auto, >={latex'[width=5cm]},
+  triangle/.style = {regular polygon, regular polygon sides=3, draw },
+]
+    \path[use as bounding box] (-4,0.5) rectangle (4,-3);
+    
+    \node[vertex](root) at (0, 0) {\large$+$};
+    
+    \node[vertex, label=left:$\mathsf{S}^{[1]}_1$](s1) at (-2, -1.0) {\large$+$};
+    \node[vertex, label=right:$\mathsf{S}^{[1]}_2$](s2) at (2, -1.0) {\large$+$};
+    
+    \node[triangle](j1) at (-3, -2.5) {$C_1$};
+    \node[triangle](j2) at (-1, -2.5) {$C_2$};
+    \node[triangle](j3) at (1, -2.5) {$C_3$};
+    \node[triangle](j4) at (3, -2.5) {$C_4$};
+    
+    \draw[->] (root) -- (s1) node[above, midway, sloped] {$w^{[0]}_1$};
+    \draw[->] (root) -- (s2) node[above, midway, sloped] {$w^{[0]}_2$};
+    
+    \draw[->] (s1) -- (j1.north) node [anchor=east] {$w^{[1]}_1$};
+    \draw[->] (s1) -- (j2.north) node [anchor=west] {$w^{[1]}_2$};
+    \draw[->] (s2) -- (j3.north) node [anchor=east] {$w^{[1]}_3$};
+    \draw[->] (s2) -- (j4.north) node [anchor=west] {$w^{[1]}_4$};
+	
+ 	\end{tikzpicture}
+ 	}
+\end{document}
