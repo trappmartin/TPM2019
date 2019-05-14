@@ -7,14 +7,7 @@ To run the experiments,
 1. Install a running version of Julia
 2. Add the SumProductNetworks package using `pkg> add SumProductNetworks`
 3. Add the following additionally packages: `Statistics, Plots, PGFPlots`
-4. Start Julia from the command line at the location of this repo and start jupyter, e.g.
-
-	```
-	using IJulia
-	notebook(dir=pwd())
-	```
-
-5. Run the script using `julia experiment.jl` and wait for a while. Sorry for the slow code. :D
+4. Run the script using `julia experiment.jl` and wait for a while. Sorry for the slow code. :D
 
 #### Dependencies
 
