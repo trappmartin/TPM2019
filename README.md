@@ -1,4 +1,4 @@
-# Overparameterization in Sum-Product Networks
+# Optimisation of Overparametrized Sum-Product Networks
 
 This repository contains everything you need to reproduce the paper on "Overparameterization in Sum-Product Networks".
 
@@ -21,3 +21,6 @@ PGFPlots v3.0.3
 ```
 
 New version may work too.
+
+#### Citation
+Martin Trapp, Robert Peharz, and Franz Pernkopf. "Optimisation of Overparametrized Sum-Product Networks", 3rd Workshop of Tractable Probabilistic Modeling at the International Conference on Machine Learning, 2019.
