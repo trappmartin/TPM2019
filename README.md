@@ -9,7 +9,20 @@ To run the experiments,
 3. Add the following additionally packages: `Statistics, Plots, PGFPlots`
 4. Run the script using `julia experiment.jl` and wait for a while. Sorry for the slow code. :D
 
-#### Dependencies
+## UPDATE
+This repository now also contains an updated version of the experiments in the paper.
+The updated implementation uses a bijection to optimise the parameters in an unconstrainted space, reducing artifacts in the optimisation and providing more stable results.
+To run the updated script, make sure to use the provided `Project.toml` script to instantiate the julia environment. This is done by starting julia (version 1.3 or higher) inside the repository directory using `julia --project=.`  and calling `] instantiate` within the REPL.
+
+To run the experiments, run the `tpm2019.jl` script.
+
+Updated plots:
+![nltcs](https://user-images.githubusercontent.com/7974003/82798312-a3d30080-9e78-11ea-96bb-dd16df977d1e.png)
+![plants](https://user-images.githubusercontent.com/7974003/82798428-ccf39100-9e78-11ea-9fce-2eb234f007a2.png)
+![audio](https://user-images.githubusercontent.com/7974003/82798301-9f0e4c80-9e78-11ea-9353-b08a6859a67f.png)
+
+
+#### Dependencies (old script)
 
 The following version for each package has been used.
 
